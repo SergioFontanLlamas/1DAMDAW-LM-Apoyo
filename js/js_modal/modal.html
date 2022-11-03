@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODAL</title>
+    <style>
+        dialog::backdrop{
+            background-color: rgba(0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Modal sin JavaScript</h1>
+    <button id="openBtn">Open Modal</button>
+    <dialog>
+        <h2>Bienvenido</h2>
+        <p>Bienvenido a este sitio web</p>
+        <footer>
+            <button id="closeBtn">Cerrar Modal</button>
+        </footer>
+    </dialog>
+</body>
+<script>
+    const dialog = document.querySelector('dialog');
+    const openBtn = document.querySelector('#openBtn');
+    const closeBtn = document.querySelector('#closeBtn');
+    openBtn.addEventListener('click', () => dialog.showModal());
+    closeBtn.addEventListener('click', () => dialog.close());
+</script>
+</html>

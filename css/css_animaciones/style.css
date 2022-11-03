@@ -1,0 +1,81 @@
+body{
+    background-image: url("fondo.jpg");
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+img{
+    height: 100px;
+    float: inline-end;
+}
+
+#imagen{
+    padding-top: 400px;
+    position: relative;
+
+    animation-name: cumbia;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+#imagenloca{
+    padding-top: 400px;
+    position: relative;
+
+    animation-name: cumbialoca;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+
+#explosion{
+    padding-top: 400px;
+    position: relative;
+    visibility: hidden;
+    height: 200px;
+    top: 45px;
+    animation-name: explosion;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0.35s;
+    z-index: 2;
+}
+
+@keyframes cumbia {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1200px;
+    }
+}
+
+@keyframes cumbialoca {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1200px;
+    }
+}
+
+@keyframes explosion {
+    0%{
+        left: 0px;
+        visibility: hidden;
+    }
+    45%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    55%{
+        visibility: hidden;
+    }
+    100%{
+        left: 1200px;
+        visibility: hidden;
+    }
+}

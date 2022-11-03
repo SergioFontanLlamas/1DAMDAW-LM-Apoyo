@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGENES</title>
+</head>
+
+<body>
+    <!-- 
+        Etiqueta    <img>
+        Descripción Insertar imagen.
+        Atributos 
+            src: Ruta de la imagen.
+            alt: Texto alternativo si la imagen no es cargada, errónea o esta siendo visualizada por un navegador especial.
+            height: Altura de la imagen en píxeles,
+            width: Anchura de imagen en píxeles.
+        Tipo        En línea 
+    -->
+
+    <!-- 
+        Etiqueta    <source>
+        Descripción Vincula contenido multimedia (imágenes, audio y vídeo).
+        Atributos 
+            srcset: Ruta del contenido multimedia.
+            type: Tipo de contenido (MIME).
+        Tipo        En línea 
+    -->
+    
+    <!-- 
+        Etiqueta    <picture>
+        Descripción Contenedor de <source> y <img>.
+        Atributos   Globales
+        Tipo        Bloque 
+    -->
+        
+    <!-- 
+        Etiqueta    <figure>
+        Descripción Contenedor autorepresentativo de una imagen, ilustración, diagrama, fragmento de código, etc. Con posibilidad de añadir un pie a la imagen con <figcaption>.
+        Atributos   Globales
+        Tipo        Bloque 
+    -->
+    
+    <!-- 
+        Los formatos admitidos y sus recomendaciones son variados.
+
+        WEBP: Para navegadores actuales.
+        JPEG: Muchos colores.
+        PNG: Se necesita transparencias.
+        APNG: Animaciones en bucle.
+        GIF: Animaciones en bucle para navegadores obsoletos.
+        SVG: Vectorial.
+        BMP: Nunca recomendado. 
+    -->
+    
+    Imagen individual
+    <img src="oveja-zombie-blog.svg" alt="Oveja zombie">
+
+    Oveja zombie
+    Imagen que es un hipervínculo
+    <a href="#">
+        <img src="oveja-zombie-blog.svg" alt="Oveja zombie">
+    </a>
+
+    Oveja zombie
+    Cambiando imagen dependiendo de la resolución
+    <picture>
+        <source srcset="oveja-smartphone.png" media="(max-width: 800px)">
+        <img src="oveja.png" alt="Oveja">
+    </picture>
+
+    Redimensiona el navegador a menos de 800px de ancho y la imagen cambiará.
+
+    Oveja zombie
+    Diferentes formatos de imagen
+    <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="logo">
+    </picture>
+
+    Autocontenedor con y sin pie
+    Solo una imagen.
+    <figure>
+        <img src="oveja-zombie-blog.svg" alt="Oveja simpática">
+    </figure>
+
+    Oveja simpática
+    Imagen con pie.
+    <figure>
+        <img src="oveja-zombie-blog.svg" alt="Oveja simpática">
+        <figcaption>Oveja desafiando con la mirada</figcaption>
+    </figure>
+</body>
+
+</html>

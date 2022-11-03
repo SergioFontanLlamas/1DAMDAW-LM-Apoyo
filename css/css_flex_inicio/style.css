@@ -1,0 +1,28 @@
+*{
+    background-color: blue;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+section{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+section p{
+    background-color: white;
+}

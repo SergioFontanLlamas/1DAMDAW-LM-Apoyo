@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERACTIVO</title>
+</head>
+<body>
+    <!-- 
+        Etiqueta	<abbr>
+        Descripción	Representa abreviación o acrónimo.
+        Atributos	title: Descripción
+        Tipo	En línea
+     -->
+    <p>Estoy aprendiendo <abbr title="Hypertext Markup Language">HTML</abbr> por las mañanas.</p>
+
+    <!-- 
+        Etiqueta	<details>
+        Descripción	Crea un widget donde el contenido queda oculto salvo cuando su controlador es activado. Debe estar utilizarse junto al hijo <summary>
+        Atributos	open Marca su disposición de encontrarse abierta. En caso contrario estará cerrada.
+        Tipo	Bloque
+        
+        Etiqueta	<summary>
+        Descripción	Especifica el contenido visible de la etiqueta <details> independientemente de si esta abierta o cerrada. Debe estar envuelta por <details>.
+        Atributos	Globales
+        Tipo	Bloque
+     -->
+    <details>
+        <summary>Factura</summary>
+        <ul>
+            <li>Vino blanco: 12€</li>
+            <li>Aceitunas: 3€</li>
+        </ul>
+        <p>Total: 15€</p>
+    </details>
+    <br>
+    <!-- 
+        Etiqueta	<dialog>
+        Descripción	Representa una caja informativa, alerta, de diálogo o cualquier otro elemento temporal.
+        Atributos	open Marca su disposición de encontrarse visible. En caso contrario se presupondrá que estará oculta.
+        Tipo	Bloque
+     -->
+    <dialog open>¡Has sido registrado con éxito!</dialog>
+    <br>
+    <br><br>
+    <dialog >¡TODO CORRECTO!</dialog>
+    <br><br><br><br><br><br><br>
+
+    <!-- 
+
+        Etiqueta	<meter>
+        Descripción	Representa una gráfica horizontal de un valor cuyo rango o valor son desconocidos.
+        Atributos	
+            min: Valor mínimo.
+            max: Valor máximo.
+            low: Medida más baja.
+            high: Medida más alta.
+            optimum: Valor óptimo, el navegador debería pintarlo de otro color.
+            value: Valor entre min y max.
+        Tipo	Bloque
+     -->
+    <label id="temperature">Temperatura</label>
+    <meter 
+        id="temperature"
+        min="-275"
+        max="100"
+        value="28"
+    >
+    28
+    </meter>
+    <br><br><br><br><br>
+
+    <!-- 
+        Etiqueta	<progress>
+        Descripción	Representa una gráfica horizontal para informar al visitante del estado de un progreso.
+        Atributos	max: Valor máximo.
+        value: Longitud del porcetaje.
+        Tipo	En línea
+     -->
+     <progress max="100" value="30">30%</progress>
+</body>
+</html>

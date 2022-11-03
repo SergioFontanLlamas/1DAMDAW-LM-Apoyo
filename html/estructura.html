@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTRUCTURA</title>
+</head>
+
+<body>
+    <!-- 
+        Etiqueta <header>
+        Descripción Define la cabecera de la página o estructura.
+        Atributos Globales
+        Tipo Bloque 
+    -->
+    <header>
+        <nav>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- 
+        Etiqueta <main>
+        Descripción Define el contenido dominante de <body>.
+        Atributos Globales
+        Tipo Bloque 
+    -->
+    <main>
+        Contenido
+    </main>
+
+    <!-- 
+        Etiqueta <section>
+        Descripción Define una sección.
+        Atributos Globales
+        Tipo Bloque <body> 
+    -->
+    <section>
+        <h1>Blog</h1>
+        <p>Contenido</p>
+    </section>
+    <section>
+        <h1>Historico</h1>
+        <p>Contenido</p>
+    </section>
+    <!-- 
+        Etiqueta <nav>
+        Descripción Define el navegador.
+        Atributos Globales
+        Tipo Bloque 
+    -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mi</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- No es necesario utilizar la etiqueta <nav> dentro de un <footer>. -->
+
+    <!-- 
+        Etiqueta <address>
+        Descripción Indica la información de contacto: teléfono, e-mail, dirección…
+        Atributos Globales
+        Tipo Bloque 
+    -->
+    <address>
+        <a href="mailto:correo@falso.com">correo@falso.com</a><br>
+        <a href="tel:+34123456789">123456789</a>
+    </address>
+
+    <!-- 
+        Etiqueta <article>
+        Descripción Define un bloque reutilizable y autocontenido, como puede ser
+        una publicación de un foro, comentarios, los resultados de un buscador,
+        artículos de un blog, elementos independientnes, etc.
+        Atributos Globales
+        Tipo Bloque 
+    -->
+    <article>
+        <h1>Comentarios</h1>
+        <article>
+            <h2>Alejandro Magno</h2>
+            <p>¿Habéis visto mi espada?</p>
+        </article>
+        <article>
+            <h2>Atila</h2>
+            <p>Por el Mar Negro no te has dejado nada.</p>
+        </article>
+        <article>
+            <h2>Qing</h2>
+            <p>¿No prefieres una Katana?</p>
+        </article>
+    </article>
+
+    <article>
+        <header>
+            <h2>Título</h2>
+            <p>Publicado <time datetime="2077-12-03">Ayer</time></p>
+        </header>
+        <p>Contenido</p>
+    </article>
+    <!-- 
+        Etiqueta <aside>
+        Descripción Representa un fragmento del documento que esta
+        indirectamente relacionado con el contenido principal. Utilizado para
+        sidebars o menús laterales.
+        Atributos Globales
+        Tipo Bloque 
+    -->
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <a>Inicio</a>
+                </li>
+                <li>
+                    <a>Preguntas</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- 
+        Etiqueta <footer>
+        Descripción Difene el pie de la página, generalmente con fecha de
+        publicación o temas legales.
+        Atributos Globales
+        Tipo Bloque 
+    -->
+    <footer>
+        2077 Copyright
+    </footer>
+</body>
+</html>

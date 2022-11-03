@@ -1,0 +1,126 @@
+body{
+    background-color: rosybrown;
+    margin: 0;
+}
+
+header{
+    background-color: aqua;
+}
+
+nav{
+    background-color: rgb(156, 156, 243);
+}
+
+aside{
+    background-color: salmon;
+    width: 30%;
+}
+
+article{
+    background-color: chartreuse;
+    width: 70%;
+}
+
+section{
+    background-color: crimson;
+}
+
+#uno{
+    background-color: azure;
+    /* z-index: 3; */
+    /* visibility: hidden; */
+    /* opacity: 0.1; 10% opacidad */
+}
+
+#dos{
+    background-color: burlywood;
+    /* z-index: 2; */
+    /* left: 10px; */
+}
+
+footer{
+    background-color: goldenrod;
+}
+
+/* clase para maquetar el aside y el article */
+main{
+    display: flex;
+    width: 100%;
+}
+
+.flexbox-article{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* PANTALLA DE DISPOSITIVO MOVIL  */
+@media screen and (max-width: 599px){
+    body{
+        font-size: xx-large;
+    }
+    main{
+        display: inline;
+        width: 100%;
+    }
+    article{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+}
+
+/* PANTALLA DE TABLET */
+@media screen and (min-width: 600px) and (max-width: 849px){
+    nav{
+        font-size:larger;
+    }
+}
+
+/* PANTALLA DE PC */
+@media screen and (max-width: 850px){
+    
+}
+/* PSEUDO CLASES  */
+/* href visitada  */
+a:visited{
+    color:chartreuse;
+}
+
+/* Cursor encima */
+a:hover{
+    color:darkviolet;
+}
+
+/* estilo del link */
+a:link{
+    color:firebrick;
+}
+
+/* link clicado */
+a:active{
+    padding:10px;
+    background-color: forestgreen;
+}
+
+/* PSEUDO ELEMENTOS */
+#uno::first-letter{
+    color: blue;
+    font-size: xx-large;
+}
+
+section::first-line{
+    color:rgb(156, 156, 243);
+    font-size: xx-small;
+}
+
+/* Insertar codigo antes del contenido de un elemento  */
+section#uno::before{
+    content: "TEXTO ANTES";
+}
+
+/* Insertar codigo despues del contenido de un elemento  */
+section#dos::after{
+    content: "TEXTO DESPUES";
+}

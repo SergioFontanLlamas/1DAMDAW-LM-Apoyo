@@ -1,0 +1,104 @@
+body{
+    margin:0;
+}
+label.checkbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .65rem;
+}
+
+/* Colocamos los palitos */
+label.checkbtn>div {
+    background: black;
+    height: 2px;
+    margin-left: 8px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+
+/* Colocamos las animaciones */
+/* Primer palito.
+Generamos la animacion rontandolo */
+input:checked~label.checkbtn div:first-child {
+    transform: rotate(45deg);
+}
+
+/* Segundo palito.
+Ocultamos palito*/
+input:checked~label.checkbtn div:nth-child(2) {
+    opacity: 0;
+}
+
+/* Tercer palito.
+Generamos la animacion rotandolo al reves que el primero*/
+input:checked~label.checkbtn div:last-child {
+    transform: rotate(-45deg);
+}
+
+nav{
+    background-color: beige;
+}
+
+ul {
+    display: none;
+}
+
+input:checked~ul {
+    display: block;
+    position: absolute;
+    margin-top: 48px;
+}
+
+input {
+    display: none;
+}
+
+label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}
+.checkbtn{
+    margin-right: 15px;
+}
+nav .logo{
+    margin-top: 8px;
+}
+ul {
+    margin-top: 0;
+    padding: 0;
+    width: 25vh;
+}
+
+li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 15px 20px 15px 15px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+
+input:checked ~ ul li:hover {
+    filter: brightness(120%);
+}

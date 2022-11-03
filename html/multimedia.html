@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIMEDIA</title>
+</head>
+<body>
+    <!-- 
+        Etiqueta	<audio>
+        Descripción	Incrustar sonido en un documento.
+        Atributos	autoplay Inicia audio al mostrarse el documento.
+        controls Mostrará controles para que el usuario pueda gestionar la reproducción.
+        loop Especifica que el audio debe volver a reproducirse al terminar.
+        muted Especifica que el audio se inicie silenciado.
+        src Ruta del audio.
+        Tipo	Línea 
+    -->
+    <audio
+        controls
+        src="t-rex.mp3">
+        <p>
+            Su navegador no soporta el formato del audio, pulse <a href="t-rex.mp3">aquí</a> para descargarlo.
+        </p>
+    </audio>
+    
+    <!-- Si lo que buscamos en añadir una descripción jugaremos con <figure> y <figcaption>. -->
+    
+    <figure>
+        <figcaption>T-Rex:</figcaption>
+        <audio
+            controls
+            src="t-rex.mp3">
+            <p>
+                Su navegador no soporta el formato del audio, pulse <a href="t-rex.mp3">aquí</a> para descargarlo.
+            </p>
+        </audio>
+    </figure>
+    <!-- Compatibilidad
+        Los formatos de audio más utilizados en la creación web son:
+            mp3
+            wav
+            ogg
+            webm
+            aac
+        Cada uno dispone de sus propias ventajas y desventajas, pero lo importante son los códecs y su compatibilidad. 
+        No todos los navegadores pueden reproducir los mismos formatos, algunos requieren licencias que no se desean pagar (por los navegadores) o existen ciertos intereses económicos en no dar soporte. 
+        ¿Entonces no podemos asegurar que se reproduzca en todos los dispositivos? Hay una etiqueta que nos resuelve el problema: <source>. 
+    -->
+    
+    <audio controls>
+        <source srcset="t-rex.mp3" type="audio/mp3">
+        <source srcset="t-rex.ogg" type="audio/ogg">
+        <p>
+            Su navegador no soporta el formato del audio, pulse <a href="t-rex.mp3">aquí</a> para descargarlo.
+        </p>
+    </audio>
+    
+    <!-- Etiqueta	<video>
+        Descripción	Incrustar video en un documento.
+        Atributos	
+            autoplay Inicia audio al mostrarse el documento.
+            controls Mostrará controles para que el usuario pueda gestionar la reproducción.
+            loop Especifica que el vídeo debe volver a reproducirse al terminar.
+            muted Especifica que el vídeo se inicie silenciado.
+            src Ruta del audio.
+            width: Anchura del vídeo.
+            poster: Imagen que será mostrada antes de reproducirse.
+        Tipo	Línea 
+    -->
+    <video controls src="te.mp4">
+        <p>
+            Su navegador no soporta el formato del vídeo, pulse <a href="te.mp4">aquí</a> para descargarlo.
+        </p>
+    </video>
+    
+    
+    <video controls>
+        <source src="te.webm" type="video/webm">
+        <source src="te.mp4" type="video/mp4">
+        <p>
+            Su navegador no soporta el formato del vídeo, pulse <a href="te.mp4">aquí</a> para descargarlo.
+        </p>
+    </video>
+
+    <!-- Y en caso de querer usar una imagen de previa, la cual puede tener relación o no con el contenido, usaremos el atributo poster. -->
+    
+    <video controls poster="previa.jpg">
+        <source src="te.webm" type="video/webm">
+        <source src="te.mp4" type="video/mp4">
+        <p>
+            Su navegador no soporta el formato del vídeo, pulse <a href="te.mp4">aquí</a> para descargarlo.
+        </p>
+    </video>
+
+    <!-- Si deseas usar el atributo autoplay debes acompañarlo de muted. No esta permitido autoreproducir vídeos con sonido. -->
+    
+    <!-- Compatibilidad
+        Los formatos de video con muchos pero en el Diseño Web destacan por compatibilidad y uso:
+    
+        mp4: Altamente recomendada con los códecs H264 y AAC.
+        webm: Calidad buena.
+        -->
+
+    <!-- 
+        Servicios de terceros: Youtube, Vimeo, etc.
+            Cada plataforma dispone de su propio reproductor. 
+            La manera más común de integrarlo es por medio de un <iframe>. 
+    -->
+    
+</body>
+</html>

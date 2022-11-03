@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+    <!-- 
+        Etiqueta	<form>
+        Descripción	Contenedor de elementos interactivos que otorgan al visitante la opción de enviar información.
+        Atributos	
+            action: Ruta donde se enviará la información.
+            enctype: Formato del contenido. Sus opciones son
+                application/x-www-form-urlencoded 
+                multipart/form-data 
+                text/plain
+            method: Método HTTP que usará el navegador para enviar la información. Sus opciones son: get y post.
+            autocomplete: Transmite al navegador si puede o no usar su autocompletador. Sus opciones son on y off
+            novalidate: Indica si debe ser validado o no la información antes de ser enviado.
+        Tipo	Bloque 
+    -->
+    <form>
+        <!-- Campos interactivos -->
+    </form>
+
+    <!-- En el interior de <form> usaremos diversas etiquetas siendo cada una especializada en un ámbito. -->
+    
+    <!-- 
+        Etiqueta	<label>
+        Descripción	Trabaja junto a <input>. Describe su contenido.
+        Atributos	
+            for: Vincula con el atributo id de un input.
+        Tipo	En línea 
+    -->
+    
+    <!-- 
+        Etiqueta	<input>
+        Descripción	Campo de formulario para la inserción de contenido como puede ser texto.
+        Atributos	
+            type: Define el tipo. Los mas populares son:
+                button
+                checkbox
+                color
+                date
+                email
+                file
+                number
+                password
+                radio
+                range
+                reset
+                search
+                submit
+                text
+            name: Nombre con el cual se representará al llegar al servidor (siempre debe estar presente).
+            value: Contenido o texto.
+            required: Obliga a que sea rellenado.
+            placeholder: Texto informativo.
+            disabled: Desactiva el elemento, aunque es visible.
+        Tipo	En línea 
+    -->    
+    
+    <label>
+        ¿Cual es tu cadena de radio favorita?
+        <input type="text" name="cadenaRadio">
+    </label>
+    
+    <label for="miRadio">¿Cual es tu cadena de radio favorita?</label>
+    
+    <input id="miRadio" type="text" name="cadenaRadio">
+    
+    <!-- 
+        Etiqueta	<textarea>
+        Descripción	Campo de texto para varias líneas
+        Atributos	Globales
+        Tipo	En línea 
+    -->
+    
+    <label>
+        Anotaciones:
+        <textarea name="anotaciones"></textarea>
+    </label>
+    
+    <!-- 
+        Etiqueta	<select>
+        Descripción	Contenedor de opciones.
+        Atributos	Globales
+        Tipo	En línea 
+    -->
+
+    <!-- 
+        Etiqueta	<option>
+        Descripción	Opción del selector.
+        Atributos	
+            value: Valor que será enviado.
+            disabled: No deja ser seleccionable.
+            selected: Selecciona la opción.
+        Tipo	En línea 
+    -->
+
+    <select name="mascota">
+        <option value="0">Perro</option>
+        <option value="1">Gato</option>
+        <option value="2">Hamster</option>
+        <option value="3">Conejo</option>
+        <option value="4">Tortuga</option>
+    </select>
+    
+    <select name="mascota">
+        <option value="" aria-label="mascota" disabled selected>¿Qué mascota tienes?</option>
+        <option value="0">Perro</option>
+        <option value="1">Gato</option>
+        <option value="2">Hamster</option>
+        <option value="3">Conejo</option>
+        <option value="4">Tortuga</option>
+    </select>
+
+    <!-- 
+        Etiqueta	<button>
+        Descripción	Lanza eventos sobre el formulario.
+        Atributos	type: 
+            “submit” para enviar el formulario
+            “reset” para restablecer los campos
+            “button” para lanzar funcionalidades en Javascript.
+        Tipo	    En línea 
+    -->
+    <button type="submit">
+        Enviar
+    </button>
+    
+    <!-- 
+        Etiqueta	<fieldset>
+        Descripción	Sección de campos a agrupar
+        Atributos	Globales
+        Tipo	    En línea 
+    -->
+
+    <!-- 
+        Etiqueta	<legend>
+        Descripción	Título de grupo
+        Atributos	Globales
+        Tipo	    En línea 
+    -->
+
+    <fieldset>
+        <!-- Titulo de Fieldset -->
+        <legend>Reserva de entrada</legend>
+    
+        <label>
+            Nombre y apellidos
+            <input type="text" name="nombre">
+        </label>
+    
+        <label>
+            Número de asientos
+            <input type="number" name="numero">
+        </label>
+    
+        <button type="submit">Pagar</button>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+
+ul{
+  display: none;
+}
+
+input:checked  ~ ul{
+  display:block;
+}
+
+input:checked ~ label {
+  background: rgb(211, 211, 211); 
+}
+
+
+input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+label:hover{
+  background: grey;
+}
+
+ul{
+  margin-top:0;
+  padding: 0;
+  width: 25vh;
+}
+
+
+li {
+  display: block;
+  background: lightgrey;
+  margin: 0;
+  padding: 15px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
+
+li:hover {
+  filter: brightness(120%);
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="nav">
+        <label for="nav"> <i class="fas fa-bars"></i> </label>
+        <ul>
+          <li>opcion 1</li>
+          <li>opcion 2</li>
+          <li>opcion 3</li>
+          <li>opcion 4</li>
+        </ul>
+      </nav>
+    
+</body>
+</html>

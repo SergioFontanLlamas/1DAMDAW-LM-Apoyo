@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATALIST</title>
+</head>
+<body>
+    <label>
+        País
+        <input
+            type="text"
+            list="codigos-pais">
+
+            <datalist id="codigos-pais">
+                <option value="IN">India</option>
+                <option value="US">Estados Unidos</option>
+                <option value="CH">China</option>
+                <option value="ES">España</option>
+            </datalist>
+    </label>
+<br>    
+    <label>
+        Escala
+        <input
+            type="range"
+            list="escala"
+            min="1"
+            max="5">
+
+            <datalist id="escala">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+            </datalist>
+    </label>
+    <br>
+    <label>
+        Color
+        <input
+            type="color"
+            list="colores">
+
+            <datalist id="colores">
+                <option value="#4b32bf"></option>
+                <option value="#ac45fa"></option>
+                <option value="#f9427c"></option>
+                <option value="#fac642"></option>
+                <option value="#4fd6be"></option>
+            </datalist>
+    </label>
+
+    <br>
+    <label>
+        Fecha
+        <input
+            type="date"
+            list="fechas">
+
+            <datalist id="fechas">
+                <option value="2022-10-10">Hace 7 dias</option>
+                <option value="2022-09-27">hace 14 dias</option>
+                <option value="2022-09-11">Hace 30 dias</option>
+            </datalist>
+    </label>
+</body>
+</html>

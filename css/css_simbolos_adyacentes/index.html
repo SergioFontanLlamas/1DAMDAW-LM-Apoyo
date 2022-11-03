@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Todas las etiquetas p dentro de .contenedor  */
+        .contenedor p {
+            color: #0000ff;
+        }
+
+        /* Todas las etiquetas p hijas directas de .contenedor  */
+        .contenedor > p {
+            color: #0000ff;
+        }
+
+        /* Todas las etiquetas p despues del cierre del div  */
+        div ~ p {
+            color: #ff5500;
+        }
+
+        /* La primera etiqueta p despues del cierre del div  */
+        div + p {
+            color: #ff00ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=”contenedor”>
+        <h3>Título de mi página</h3>
+        <div>
+            <p>Primer párrafo</p>
+        </div>
+        <p>Segundo párrafo</p>
+        <p>Tercer párrafo</p>
+        <p>Cuarto párrafo</p>
+    </div>
+    <p>Quinto párrafo</p>
+</body>
+
+</html>

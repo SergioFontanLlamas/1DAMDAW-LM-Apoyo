@@ -1,0 +1,49 @@
+body{
+    background-color: rosybrown;
+    margin: 0px;
+}
+
+header{
+    background-color: aqua;
+}
+
+nav{
+    background-color: blue;
+}
+
+aside{
+    background-color: salmon;
+    width: 30vw;
+}
+
+article{
+    background-color: chartreuse;
+    width: 70vw;
+}
+
+section{
+    background-color: crimson;
+    width: 50vw;
+}
+
+footer{
+    background-color: goldenrod;
+}
+
+/* clase para maquetar el aside y el article */
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    gap: 5px;
+}
+
+.flexbox-article{
+    display: flex;
+    justify-content: end;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
